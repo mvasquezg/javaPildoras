@@ -1,11 +1,11 @@
 package vehiculo;
 
 public class Coche {
-   int ruedas;
-   int largo;
-   int ancho;
-   int motor;
-   int peso;
+   private int ruedas;
+   private int largo;
+   private int ancho;
+   private int motor;
+   private int peso;
    
    //Metodo Constructor
    public Coche() {
