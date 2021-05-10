@@ -18,6 +18,16 @@ public class CocheApp {
 		renault.setConfigurarAsientos("Si");
 		
 		System.out.println(renault.getAsientos());
+		
+		renault.setAireAcondicionado("Si");
+		
+		System.out.println(renault.getAireAcondicionado());
+		
+		
+		System.out.println(renault.getPesoTotalCoche());
+		
+		System.out.println("El precio del carro es: "+renault.getPrecioCoche());
+		
 	}//end main
 
 }//end CocheApp
