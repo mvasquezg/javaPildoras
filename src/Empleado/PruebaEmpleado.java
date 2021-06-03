@@ -2,16 +2,29 @@ package Empleado;
 
 public class PruebaEmpleado {
 	
-	private final String name;
+	private final String NAME;//Constante
 	private String section;
+	//public static int idEmployed;
+	private int idEmployed;
+	private static int idSiguiente=1;
+	
+	
+	/*public PruebaEmpleado(String name, int idEmployed) {
+		this.NAME=name;
+		this.section="Administracion";
+		this.idEmployed=idEmployed; //Se agrega el idEmpleaod
+	}//end constructor*/
 	
 	public PruebaEmpleado(String name) {
-		this.name=name;
+		this.NAME=name;
 		this.section="Administracion";
+		this.idEmployed=this.idSiguiente; 
+		
+		this.idSiguiente++;
 	}//end constructor
 
 	public String getName() {
-		return name;
+		return NAME;
 	}
 
 	/*public void setName(String name) {
@@ -23,7 +36,7 @@ public class PruebaEmpleado {
 	}
 	
 	public String getData() {
-		return "El nombre es: "+this.name+"\nLa seccion es: "+this.section+"\n";	
+		return "El numero de empleado: "+this.idEmployed+"\nNombre: "+this.NAME+"\nLa seccion es: "+this.section+"\n";	
 	}//end getData
 		
 	/*public void changeName(String name) {
