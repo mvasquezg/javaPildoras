@@ -10,6 +10,7 @@ public class PruebaEmpleadoApp {
 		PruebaEmpleado empleado01=new PruebaEmpleado("Miguel");
 		PruebaEmpleado empleado02=new PruebaEmpleado("Carolina");
 		PruebaEmpleado empleado03=new PruebaEmpleado("Paola");
+		PruebaEmpleado empleado04=new PruebaEmpleado("Ximena");
 		
 		
 		empleado01.changeSection("RRHH");
@@ -20,6 +21,9 @@ public class PruebaEmpleadoApp {
 		//PruebaEmpleado.idEmployed++;
 		System.out.println(empleado02.getData());
 		System.out.println(empleado03.getData());
+		System.out.println(empleado04.getData());
+		System.out.println(PruebaEmpleado.returnIdNExt());
+		
 		
 	}//end main
 

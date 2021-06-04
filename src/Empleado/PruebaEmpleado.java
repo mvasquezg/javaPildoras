@@ -35,6 +35,13 @@ public class PruebaEmpleado {
 		this.section=section;
 	}
 	
+	//MEtodo estatic 
+	public static String returnIdNExt() {
+		
+		return "El idSiguiente es: "+idSiguiente;
+	}
+	
+	
 	public String getData() {
 		return "El numero de empleado: "+this.idEmployed+"\nNombre: "+this.NAME+"\nLa seccion es: "+this.section+"\n";	
 	}//end getData
