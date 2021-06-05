@@ -31,13 +31,15 @@ public class EmpleadoApp {
 			  );*/
 		
 		//Creando arreglo de objetos empleado
-		Empleado [] arrayEmpleados=new Empleado[3];
+		Empleado [] arrayEmpleados=new Empleado[4];
 		
 		arrayEmpleados[0]=new Empleado("Carolina Garcia", 85000, 1990, 12, 17);
 		
 		arrayEmpleados[1]=new Empleado("Miguel Vasquez", 95000, 1995, 06, 02);
 		
 		arrayEmpleados[2]=new Empleado("Paola", 105000, 2003, 03, 15);
+		
+		arrayEmpleados[3]=new Empleado("Ximena");
 		
 		//Bucle For para incrementar sueldo 
 		/*for(int i=0; i<arrayEmpleados.length; i++) {

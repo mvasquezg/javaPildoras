@@ -9,6 +9,10 @@ public class Empleado {
 	private double sueldoEmpleado;
 	private Date altaContrato; //Fecha de contrato
 	
+	public Empleado(String nombreEmpleado) {
+		//this.nombreEmpleado=nombreEmpleado;
+		this(nombreEmpleado, 3000, 2000, 01, 01);
+	}
 	
 	public Empleado(String nombreEmpleado, double sueldoEmpleado, int anho, int mes, int dia) {
 		
@@ -21,7 +25,10 @@ public class Empleado {
 		
 	}//end Empleado
 
-
+	
+	
+	
+	
 	public String getNombreEmpleado() {
 		return nombreEmpleado;
 	}
