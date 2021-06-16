@@ -51,6 +51,13 @@ public class EmpleadoApp {
 		
 		arrayEmpleados[5]=new Jefatura("Maria", 95000, 1999, 05, 26);
 		
+		//Casting de Objetos
+		Jefatura jefeFinanzas=(Jefatura) arrayEmpleados[5];
+		jefeFinanzas.setIncentivo(55000);
+		
+		//Error 
+		/// No se puede hacer casting Jefatura jefeFinanzaas=(Jefatura) arrayEmpleados[1];
+	
 		
 		
 		//Bucle For para incrementar sueldo 
