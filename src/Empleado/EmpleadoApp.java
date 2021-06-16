@@ -30,8 +30,14 @@ public class EmpleadoApp {
 			   	"\nFecha Alta: "+empleado01.getAltaContrato()
 			  );*/
 		
+		//Creando Instancia de Jefatuira
+		Jefatura jefeRH=new Jefatura("Juan", 55000, 2000, 9, 25);
+		
+		jefeRH.setIncentivo(2570);
+		
+		
 		//Creando arreglo de objetos empleado
-		Empleado [] arrayEmpleados=new Empleado[4];
+		Empleado [] arrayEmpleados=new Empleado[6];
 		
 		arrayEmpleados[0]=new Empleado("Carolina Garcia", 85000, 1990, 12, 17);
 		
@@ -40,6 +46,12 @@ public class EmpleadoApp {
 		arrayEmpleados[2]=new Empleado("Paola", 105000, 2003, 03, 15);
 		
 		arrayEmpleados[3]=new Empleado("Ximena");
+		
+		arrayEmpleados[4]=jefeRH;//Polimorfismo en accion, Principio de sustitucion;
+		
+		arrayEmpleados[5]=new Jefatura("Maria", 95000, 1999, 05, 26);
+		
+		
 		
 		//Bucle For para incrementar sueldo 
 		/*for(int i=0; i<arrayEmpleados.length; i++) {
